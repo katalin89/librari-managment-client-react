@@ -24,4 +24,10 @@ async function getAllBooks(){
      return data;
 }
 
-export {getAllBooks};
+async function addBook(book){
+    let data= await api("/add",'POST',book);
+
+    return data;
+}
+
+export {getAllBooks, addBook};

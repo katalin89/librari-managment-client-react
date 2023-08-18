@@ -12,11 +12,8 @@ function Home(){
     async function handleBooks(){
 
         let data=await getAllBooks();
-
         console.log(data);
-
         setBooks(data);
-
         console.log(books);
     }
 
